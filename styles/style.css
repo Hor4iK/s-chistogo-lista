@@ -1,6 +1,67 @@
-body{
-    margin: 0;
-    min-width: 360px;
-    min-width: 100%;
-    
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  min-width: 360px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 360px;
+  min-height: 100px;
+  margin: auto;
+}
+
+.content-section_theme_dark {
+  color: #fff;
+  background-color: #131313;
+}
+
+.content-section_theme_bright {
+  color: #131313;
+  background-color: #fee42a;
+}
+
+.header {
+  padding: 24px 20px;
+}
+
+.header_logo-image {
+  
+}
+
+.cover {
+  padding: 7px 20px 30px 20px;
+}
+
+.intro {
+  padding: 30px 20px;
+}
+
+.reasons {
+  padding: 40px 20px;
+}
+
+.how-to {
+  padding: 40px 20px;
+}
+
+.footer{
+  padding: 20px;
 }
