@@ -24,7 +24,7 @@ blockquote {
   width: 100%;
   box-sizing: border-box;
   max-width: 360px;
-  min-height: 100px;
+  /* min-height: 100px; */
   margin: auto;
 }
 
@@ -39,29 +39,211 @@ blockquote {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
   padding: 24px 20px;
 }
 
+.header_logo {
+  display: block;
+  width: 78px;
+}
+
 .header_logo-image {
-  
+  width: 100%;
+}
+
+.header_menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.header_menu-link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+}
+
+.header_menu-item_active .header_menu-link {
+  text-decoration: none;
 }
 
 .cover {
+  min-height: 258px;
+  background-image: url(/images/cover.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 95% auto;
   padding: 7px 20px 30px 20px;
+}
+
+.cover_title {
+  width: 100%;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "EB Garamond", serif;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .intro {
   padding: 30px 20px;
 }
 
+.intro_heading {
+  color: #ccc;
+  padding-bottom: 24px;
+  gap: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro_title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.intro_date {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.intro_main-text {
+  color: #f5f5f5;
+  line-height: 1.35;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .reasons {
   padding: 40px 20px;
+}
+
+.content-section_subtitle {
+  margin-bottom: 32px;
+  width: 100%;
+  font-family: "EB Garamond", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.content-section_introduction {
+  margin: 0 0 32px;
+  line-height: 1.35;
+  font-size: 20px;
+}
+
+.content-section_list {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0 0 0 16px;
+  line-height: 1.35;
+  font-size: 16px;
+}
+
+.content-section_list-item {
+  list-style-type: disc;
+}
+
+.content-section_list-accent {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .how-to {
   padding: 40px 20px;
 }
 
-.footer{
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  line-height: 1.35;
+  list-style: none;
+  margin-bottom: 60px;
+}
+
+.card {
   padding: 20px;
+  border-radius: 30px;
+}
+
+.card_theme_bright {
+  background-color: #fee42a;
+  color: #131313;
+}
+
+.card_theme_dark {
+  background-color: #343434;
+  color: #f5f5f5;
+}
+
+.card_author-photo {
+  display: block;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.card_author-name {
+  margin: 8px 0 0;
+  font-weight: 700;
+}
+
+.card_content {
+  margin-top: 8px;
+}
+
+.card_title {
+  font-family: "EB Garamond";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card_text {
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer_copy {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer_links {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.25;
+  gap: 16px;
 }
